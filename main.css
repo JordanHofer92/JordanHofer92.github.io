@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    background: black;
+}
+h1 {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+h2 {
+    color: white;
+    flex-wrap: wrap;
+}
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "homebio"
+    "pagecards"
+    "pagefoot"
+    ;
+    
+}
+/* Dropdown nav btn */
+.navbar {
+    position: fixed;
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: maroon;
+    z-index: 10;
+}
+.dropnav {
+    display: inline-block;
+    align-self: flex-end;
+}
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 1rem; /*lol, same thing I know*/
+}
+.droplinks {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.droplinks a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropnav:hover .droplinks {
+    display: block;
+}
+
+
+.homebio {
+    /* border: 2px solid red; */
+    margin-top: 125px;
+    grid-area: homebio;
+    height: 320px;
+    display: flex;
+    padding: 5%;
+    background: black;
+}
+
+
+.biodetails {
+    height: 100%;
+    color: white;
+}
+
+/* Card Styles */
+.pagecards img {
+    max-height: 100%;
+    width: 100%;
+    grid-area: pagecards;
+    justify-content: space-evenly;
+}
+
+.pagecards h2 {
+    position: absolute;
+    font-size: 40px;
+}
+.pagecards p {
+    color: white;
+}
+
+.pagefoot {
+    grid-area: pagefoot;
+    height: 150px;
+    background: black;
+}
