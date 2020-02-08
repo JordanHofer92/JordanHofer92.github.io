@@ -44,6 +44,7 @@ h2 {
     font-size: 1rem; /*lol, same thing I know*/
     font-family: 'Courier New', Courier, monospace;
     margin-right: 15px;
+    margin-bottom: 5px;
 }
 .droplinks {
     right: 0;
@@ -89,12 +90,14 @@ h2 {
 
  .homebio p {
     font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 15px;
     text-align: center;
 }
 
 .homebio img {
     padding: 10px;
+    object-fit: cover;
 }
 
 .biodetails {
@@ -104,15 +107,15 @@ h2 {
 
 /* Card Styles */
 .pagecards img {
-    max-height: 100%;
+    max-height: 280px;
     width: 100%;
     grid-area: pagecards;
     justify-content: space-evenly;
     filter: brightness(0.5);
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: ivory;
 }
-
 .pagecards h2 {
     position: absolute;
     font-size: 25px;
@@ -122,10 +125,12 @@ h2 {
 }
 .pagecards p {
     position: absolute;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     padding: 10px;
     z-index: 2;
-    margin-top: 210px;
+    margin-top: 200px;
 }
 
 
@@ -134,3 +139,4 @@ h2 {
     height: 150px;
     background: black;
 }
+
