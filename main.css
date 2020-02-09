@@ -89,7 +89,7 @@ h2 {
 }
 
  .homebio p {
-    font-size: 18px;
+    font-size: 17px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 15px;
     text-align: center;
@@ -102,7 +102,7 @@ h2 {
 
 .biodetails {
     height: 100%;
-    color: white;
+    color: white;;
 }
 
 /* Card Styles */
@@ -114,7 +114,7 @@ h2 {
     filter: brightness(0.5);
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: ivory;
+    object-fit: cover;    
 }
 .pagecards h2 {
     position: absolute;
@@ -131,12 +131,55 @@ h2 {
     padding: 10px;
     z-index: 2;
     margin-top: 200px;
+    
 }
-
 
 .pagefoot {
     grid-area: pagefoot;
-    height: 150px;
+    height: 50px;
     background: black;
 }
 
+@media only screen and (min-width: 900px) {
+
+ .homebio {
+    position: relative;
+    margin-top: 150px;
+    margin-right: 5px;
+    grid-area: homebio;
+    height: 320px;
+    display: flex;  
+    /* padding: 5%; */
+    background: black;
+} 
+    
+.homebio p {
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pagecards {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.pagecards p {
+    position: relative;
+    bottom: 10px;
+}
+
+.pagecards img {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    height: 100%;
+    top: 20px;
+}
+
+}
