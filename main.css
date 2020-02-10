@@ -87,7 +87,7 @@ h2 {
 }
 
  .homebio p {
-    font-size: 15px;
+    font-size: 13px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 15px;
     text-align: center;
@@ -128,9 +128,9 @@ h2 {
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    padding: 10px;
+    padding: 5px;
     z-index: 2;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .pagefoot {
