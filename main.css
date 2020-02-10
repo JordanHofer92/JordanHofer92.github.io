@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    max-width: 480px;
     background: black;
 }
 
@@ -84,13 +85,14 @@ h2 {
     height: 320px;
     display: flex;  
     background: black;
+    max-height: 100%;
 }
 
  .homebio p {
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -126,6 +128,8 @@ h2 {
 
 .pagecards p {
     position: absolute;
+    width: 480px;
+    max-width: 100%;
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
