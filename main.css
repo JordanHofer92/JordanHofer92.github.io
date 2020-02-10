@@ -3,15 +3,18 @@ body {
     margin: 0;
     background: black;
 }
+
 h1 {
     color: white;
     padding: 10px;
     font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 h2 {
     color: white;
 }
+
 .grid {
     display: grid;
     grid-template-areas: 
@@ -22,6 +25,7 @@ h2 {
     ;
     
 }
+
 /* Dropdown nav btn */
 .navbar {
     position: fixed;
@@ -33,19 +37,22 @@ h2 {
     z-index: 10;
     text-align: center;
 }
+
 .dropnav {
     display: inline-block;
     align-self: flex-end;
 }
+
 .dropbtn {
     background-color: black;
     color: white;
     padding: 16px;
     font-size: 1rem; /*lol, same thing I know*/
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 15px;
     margin-bottom: 5px;
 }
+
 .droplinks {
     right: 0;
     display: none;
@@ -55,28 +62,20 @@ h2 {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
 .droplinks a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
+
 .dropnav:hover .droplinks {
     display: block;
 }
 
-
-/* .homebio {
-    border: 2px solid red;
-    position: relative;
-    margin-top: 150px;
-    grid-area: homebio;
-    height: 320px;
-    display: flex;  
-    padding: 5%;
-    background: black;
-} */
-
+/* Bio Styles */
 .homebio {
     position: relative;
     margin-top: 150px;
@@ -84,7 +83,6 @@ h2 {
     grid-area: homebio;
     height: 320px;
     display: flex;  
-    /* padding: 5%; */
     background: black;
 }
 
@@ -114,8 +112,9 @@ h2 {
     filter: brightness(0.5);
     padding-top: 10px;
     padding-bottom: 10px;
-    object-fit: cover;    
+    object-fit: cover;  
 }
+
 .pagecards h2 {
     position: absolute;
     font-size: 25px;
@@ -123,6 +122,7 @@ h2 {
     padding: 10px;
     z-index: 3;
 }
+
 .pagecards p {
     position: absolute;
     font-size: 18px;
@@ -131,7 +131,6 @@ h2 {
     padding: 10px;
     z-index: 2;
     margin-top: 200px;
-    
 }
 
 .pagefoot {
@@ -148,6 +147,7 @@ h2 {
     margin-right: 5px;
     grid-area: homebio;
     height: 320px;
+    width: 100%;
     display: flex;  
     /* padding: 5%; */
     background: black;
@@ -164,8 +164,15 @@ h2 {
 .pagecards {
     position: relative;
     display: flex;
-    justify-content: space-around;
-    height: 500px;
+    justify-content: space-between;
+}
+
+.pagecards h2 {
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    z-index: 3;
 }
 
 .pagecards p {
@@ -175,11 +182,15 @@ h2 {
 
 .pagecards img {
     position: absolute;
-    width: 700px;
+    width: 40%;
     height: 100%;
     object-fit: cover;
     height: 100%;
     top: 20px;
+}
+
+.blogcard h2 {
+    top: 10px;
 }
 
 }
