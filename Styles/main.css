@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+article {
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home img {
+    object-fit: contain;
+}

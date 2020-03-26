@@ -4,45 +4,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/ca3f327da4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
-    <title>Jordan T.E. Hofer</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+    <title>Jordan Hofer</title>
 </head>
 <body>
     <div class="page-container">
         <nav>
             <div class="menu">
                 <ul class="menu-links">
-                    <li>home</li>
-                    <li>work</li>
-                    <li>blog</li>
-                    <li>contact</li>
+                    <a href="#about"><li>about</li></a>
+                    <a href="#work"><li>work</li></a>
+                    <a href="#contact"><li>contact</li></a>
                 </ul>
             </div>
         </nav>
         <section class="home">
+            <h1>Jordan Hofer</h1>
             <img src="./Images/profile.jpg" alt="A picture of Jordan">
             <div class="home-greeting">
-                <h1>Jordan Hofer</h1>
-                <p>Welcome to my page.Take a look around and see what catches your eye!</p>
+                <!-- <p>Welcome to my site! I build well organized, structural websites using HTML, CSS, JavaScript, and React. I am passionate about nature, athletics, and international cuisines and take inspiration from these facets of my life. Take a look around and see what catches your eye. If you like anything you see, contact me and let's collaborate on your next project!</p> -->
+                <p>I am a front-end web developer that builds well organized, structural websites using HTML, CSS, JavaScript, and React.</p>
             </div>
         </section>
+        <section>
+            <article id="about" class="about">
+                <a href="../src/splashpage.html"><div class="work-description">
+                    <h2>about</h2>
+                    <p>Take a look at what I've been learning, creating, and participating in </p>
+                </div></a>
+            </article>
             <article id="work" class="work">
-                <a href="/splashpage.html"><div class="work-description">
+                <a href="../src/splashpage.html"><div class="work-description">
                     <h2>work</h2>
-                    <p>Check out some of my recent work and let me know if you are interested in any of my services</p>
+                    <p>Check out some of my recent work </p>
                 </div></a>
             </article>
-            <article id="blog" class="blog">
-                <a href="./splashpage.html"><div class="blog-description">
-                    <h2>blog</h2>
-                    <p>Follow along with my blog to see what I've been up to</p>
+            <article id="contact" class="contact">
+                <a href="../src/splashpage.html"><div class="blog-description">
+                    <h2>contact</h2>
+                    <p>Get in touch with me for any questions or feedback you may have</p>
                 </div></a>
             </article>
-            <div id="contact" class="socials">
-                <ul>
-                    <a href="https://www.linkedin.com/in/jordan-hofer-07478b159/" target="_blank" class="linkedin"><li><i class="fab fa-linkedin"></i></li></a>
-                    <a href="https://github.com/JordanHofer92" target="_blank" class="github"><li><i class="fab fa-github"></i></li></a>
-                    <a href="https://twitter.com/JordanHofer18" target="_blank" class="twitter"><li><i class="fab fa-twitter"></i></li></a>
+        </section>
+            <div id="socials">
+                <ul class="socials">
+                    <a href="https://www.linkedin.com/in/jordan-hofer-07478b159/" target="_blank" class="linkedin"><li><i class="fab fa-linkedin fa-2x"></i></li></a>
+                    <a href="https://github.com/JordanHofer92?tab=repositories" target="_blank" class="github"><li><i class="fab fa-github fa-2x"></i></li></a>
+                    <a href="https://twitter.com/JordanHofer18" target="_blank" class="twitter"><li><i class="fab fa-twitter fa-2x"></i></li></a>
                 </ul>
             </div>
 
