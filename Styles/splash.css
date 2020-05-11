@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat+Subrayada&family=VT323&display=swap');
 
 :root {
-    --tech-header: 'Montserrat Subrayada', sans-serif;
-    --tech-body: 'VT323', monospace;
-    --whimsical: 'Amatic SC', cursive;
+    --tech-header-font: 'Montserrat Subrayada', sans-serif;
+    --tech-body-font: 'VT323', monospace;
+    --whimsical-font: 'Amatic SC', cursive;
 }
 
 body {
@@ -21,14 +21,14 @@ h1, h2, button {
 }
 
 h1 {
-    font-family: var(--whimsical);
+    font-family: var(--whimsical-font);
     font-size: 52px;
     margin: 0;
     margin-top: 8px;
 }
 
 h2 {
-    font-family: var(--tech-body);
+    font-family: var(--tech-body-font);
     font-size: 32px;
     margin-bottom: 1em;
 }
@@ -40,7 +40,7 @@ h2 {
 }
 
 button {
-    font-family: var(--tech-body);
+    font-family: var(--tech-body-font);
     font-size: 24px;
     border: 3px solid slategray;
     border-radius: 2em;

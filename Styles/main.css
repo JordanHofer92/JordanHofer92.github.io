@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat+Subrayada&family=VT323&display=swap');
+
+:root {
+    --tech-header-font: 'Montserrat Subrayada', sans-serif;
+    --tech-body-font: 'VT323', monospace;
+    --whimsical-font: 'Amatic SC', cursive;
+    --dark-green: #202d13;
+    --olive-green: #566232;
+    --light-beige: #cacaaa;
+    --light-blue: #516b79;
+    --dark-blue: #13293d;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,8 +19,16 @@ body {
     max-width: 100%;
 }
 
+p {
+    font-family: var(--whimsical-font);
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 1em 1em;
+}
+
 a {
     text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -17,12 +38,43 @@ ul {
     text-transform: uppercase;
 }
 
+h1 {
+    font-family: var(--tech-header-font);
+}
+
 h2 {
+    font-family: var(--tech-header-font);
     text-transform: uppercase;
 }
 
+@keyframes wiggle {
+    0% {
+        transform:rotateZ(0deg);
+    }
+    20% {
+        transform: rotateZ(2.5deg);
+    }
+    40% {
+        transform: rotateZ(-2.5deg);
+    }
+    60% {
+        transform: rotateZ(5deg);
+    }
+    80% {
+        transform: rotateZ(-5deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+h2:hover {
+    animation: wiggle 1s infinite linear;
+    color: var(--olive-green);
+}
+
 article {
-    text-align: center;
+   text-align: center;
 }
 
 .home {
@@ -33,4 +85,10 @@ article {
 
 .home img {
     object-fit: contain;
+}
+
+.home p {
+    font-family: var(--whimsical-font);
+    font-size: 28px;
+    font-weight: bolder;
 }
