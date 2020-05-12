@@ -17,6 +17,7 @@ html {
 
 body {
     max-width: 100%;
+    margin: 0;
 }
 
 p {
@@ -38,6 +39,10 @@ ul {
     text-transform: uppercase;
 }
 
+li {
+    color: var(--dark-green);
+}
+
 h1 {
     font-family: var(--tech-header-font);
 }
@@ -45,6 +50,7 @@ h1 {
 h2 {
     font-family: var(--tech-header-font);
     text-transform: uppercase;
+    color: var(--dark-blue);
 }
 
 @keyframes wiggle {
@@ -68,13 +74,43 @@ h2 {
     }
 }
 
-h2:hover {
-    animation: wiggle 1s infinite linear;
-    color: var(--olive-green);
-}
-
 article {
    text-align: center;
+}
+
+article h2 {
+    background: var(--light-blue);
+}
+
+article h2:hover {
+    animation: wiggle 1s infinite linear;
+    color: var(--light-beige);
+}
+
+
+nav {
+    background: var(--light-beige);
+    max-width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 35%
+}
+
+.menu-links {
+    font-family: var(--tech-header-font);
+}
+
+.menu-links li {
+    margin-right: 1em;
+}
+
+.menu-links li:hover {
+    color: var(--olive-green);
+    animation: wiggle 1s infinite linear;
 }
 
 .home {
@@ -87,8 +123,47 @@ article {
     object-fit: contain;
 }
 
+.home h2 {
+    font-size: 20px;
+}
+
 .home p {
     font-family: var(--whimsical-font);
-    font-size: 28px;
-    font-weight: bolder;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+footer {
+    background: var(--light-beige);
+    max-width: 100%;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotatey(0deg);
+    }
+    20% {
+        transform: rotatey(90deg);
+    }
+    40% {
+        transform: rotatey(180deg);
+    }
+    60% {
+        transform: rotatey(270deg);
+    }
+    80% {
+        transform: rotatey(359deg);
+    }
+    100% {
+        transform: rotatey(0deg);
+    }
+}
+
+.socials {
+    margin: 0;
+    padding: 1em;
+}
+
+i:hover {
+    animation: spin 1.5s infinite linear;
 }
